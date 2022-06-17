@@ -1,4 +1,3 @@
-from xmlrpc.client import Boolean
 from bitarray import bitarray
 
 a = []
@@ -28,7 +27,7 @@ for i in range(len(a[0])):
 print(int(gamma_rate.to01(), 2)*int(epsilon_rate.to01(), 2))
 
 
-def rating_from_report(report, most_common: Boolean):
+def rating_from_report(report, most_common: bool):
     numbers = report
     for i in range(len(numbers[0])):
         zeros = 0
